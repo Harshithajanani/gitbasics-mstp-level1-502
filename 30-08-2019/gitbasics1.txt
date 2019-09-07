@@ -1,0 +1,142 @@
+kvsw12@kvsw12-PC MINGW64 ~
+$ pwd
+/c/Users/kvsw12
+
+kvsw12@kvsw12-PC MINGW64 ~
+$ cd desktop
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop
+$ cd gitbasics1
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1
+$ touch sweety
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1
+$ nano sweety
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1
+$ git init
+Initialized empty Git repository in C:/Users/kvsw12/Desktop/gitbasics1/.git/
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git -a
+unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git config user.name "Harshithajanani"
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git config user.email "harshitagowri10@gmail.com"
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git remote add gitbasics1 https://github.com/Harshithajanani/gitbasics
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git remote -v
+gitbasics1      https://github.com/Harshithajanani/gitbasics (fetch)
+gitbasics1      https://github.com/Harshithajanani/gitbasics (push)
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sweety
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ ls
+sweety
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git add sweety
+warning: LF will be replaced by CRLF in sweety.
+The file will have its original line endings in your working directory
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sweety
+
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git commit -m "seeing"
+[master (root-commit) 9e75d75] seeing
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sweety
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git log
+commit 9e75d7540fe300715253da010797cba2d3b8fe68 (HEAD -> master)
+Author: Harshithajanani <harshitagowri10@gmail.com>
+Date:   Fri Aug 30 14:33:10 2019 +0530
+
+    seeing
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git commit -m "seeing"
+On branch master
+nothing to commit, working tree clean
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git log
+commit 9e75d7540fe300715253da010797cba2d3b8fe68 (HEAD -> master)
+Author: Harshithajanani <harshitagowri10@gmail.com>
+Date:   Fri Aug 30 14:33:10 2019 +0530
+
+    seeing
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git push -u gitbasics1 master
+fatal: TypeInitializationException encountered.
+   The type initializer for '<Module>' threw an exception.
+error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com':
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Harshithajanani/gitbasics/'
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git remote add gitbasics1 https://github.com/Harshithajanani/gitbasics1
+fatal: remote gitbasics1 already exists.
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git push -u gitbasics1 master
+fatal: TypeInitializationException encountered.
+   The type initializer for '<Module>' threw an exception.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Harshithajanani/gitbasics
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics1'.
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git push -u gitbasics1 master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'gitbasics1'.
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$ git push -u gitbasics1 master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'gitbasics1'.
+
+kvsw12@kvsw12-PC MINGW64 ~/desktop/gitbasics1 (master)
+$
